@@ -1,0 +1,24 @@
+---
+title: "Making a Plot in R"
+author: "Qier Meng"
+date: "2/7/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Here we will plot histogram of `mpg` variable from `mtcars`
+First we look at this variable
+```{r}
+# library tidyverse has already been loaded
+select(mtcars, mpg)
+```
+Then we create histogram using `ggplot()`
+```{r}
+mtcars %>% 
+  ggplot(aes(x = mpg)) + 
+  geom_histogram() 
+```
