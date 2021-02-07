@@ -1,2 +1,4 @@
 # Make a change to this file
-~^_^~
+^_^
+
+This is the first assignment of this class
